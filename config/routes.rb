@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
-  # Prefix route urls with "admin" and route names with "rails_admin_"
-  scope "admin", :module => :rails_admin, :as => "rails_admin" do
+  # Prefix route urls with "rails_admin" and route names with "rails_admin_"
+  scope "rails_admin", :module => :rails_admin, :as => "rails_admin" do
     scope "history", :as => "history" do
       controller "history" do
         match "/list", :to => :list, :as => "list"
